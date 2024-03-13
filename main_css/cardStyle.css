@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    scroll-padding-top: 12vw;
+}
+/* HEADER*/
+.header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 8vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 0.2vw solid #000;
+}
+.header .logo{
+    width: 5%;
+}
+.header .logo img{
+    width: 100%;
+}
+.header .navbar{
+    display: flex;
+    column-gap: 2vw;
+}
+.header .navbar .nav-item{
+    color: #000;
+    font-size: 1.1vw;
+}
+.header .signUp{
+    display: flex;
+    column-gap: 2vw;
+}
+.header .signUp .signUp-item{
+    font-size: 1.1vw;
+    padding: 0.5vw 2vw;
+    background-color: #fff;
+    border: 0.2vw solid #000;
+    border-radius: 0.2vw;
+}
+.header .signUp .signUp-item:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.header .burgerMenu{
+    width: 5%;
+    display: none;
+}
+.header .burgerMenu .burgerMenu-icon{
+    width: 100%;
+}
+.header .burgerMenu-list{
+    position: absolute;
+    right: 6vw;
+    top: 20vw;
+    list-style-type: none;
+    background-color: #fff;
+    border: 0.5vw solid #000;
+    padding: 1vw 2vw;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.1s linear;
+}
+.header .burgerMenu-list li{
+    margin-top: 1vw;
+}
+.header .burgerMenu-list li a{
+    color: #000;
+}
+.header .burgerMenu-list.active{
+    transition: all 0.3s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* MAIN*/
+.main{
+    padding: 0 8vw;
+    margin: 10% 0;
+}
+.main .card{
+    display: flex;
+    column-gap: 2vw;
+    border: 0.2vw solid #000;
+    padding: 2vw;
+    border-radius: 0.2vw;
+}
+.main .card img{
+    width: 40%;
+    border-radius: 0.2vw;
+}
+.main .card .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+.main .card .description button{
+    font-size: 1vw;
+    background-color: #fff;
+    border: 0.2vw solid #000;
+    padding: 0.5vw 0;
+}
+.main .card .description button:hover{
+    transition: all 0.3s linear;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.main .review{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+.main .review .review-item{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    row-gap: 0.5vw;
+    border: 0.2vw solid #000;
+    border-radius: 0.2vw;
+    padding: 1vw;
+}
+.main .review .review-item ul{
+    display: flex;
+}
+.main .review .review-item ul li{
+    width: 28px;
+}
+.main .review .review-item ul li img{
+    width: 100%;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 8vw;
+    border-top: 0.2vw solid #000;
+}
+.footer .logo{
+    width: 5%;
+}
+.footer .logo img{
+    width: 100%;
+}
+.footer .legalInformation li a{
+    font-size: 1vw;
+    color: #000;
+}
+.footer .address .contacts li{
+    font-size: 1vw;
+    font-style: normal;
+    color: #000;
+}
+.footer .address .contacts li a{
+    color: #000;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px){
+
+    /* HEADER */
+    .header{
+        position: static;
+        border: 0;
+        padding: 4vw 8vw;
+    }
+    .header .navbar, .header .signUp{
+        display: none;
+    }
+    .header .burgerMenu{
+        display: block;
+        width: 16%
+    }
+    .header .logo{
+        width: 16%;
+    }
+
+    /* MAIN */
+    .main .card{
+        border: 0.5vw solid #000;
+    }
+    .main .card .description{
+        font-size: 2vw;
+        row-gap: 2vw;
+    }
+    .main .card .description button{
+        font-size: 2vw;
+        border: 0.3vw solid #000;
+        padding: 1.5vw 0;
+    }
+    .main .review{
+        margin-top: 20%;
+    }
+    .main .review .review-item{
+        font-size: 2vw;
+        width: 30%;
+        border: 0.3vw solid #000;
+    }
+    .main .review .review-item ul li{
+        width: 20px;
+    }
+
+    /* FOOTER */
+    .footer{
+        border-top: 0.5vw solid #000;
+        padding: 2vw 8vw;
+        align-items: flex-start;
+    }
+    .footer .logo{
+        display: none;
+    }
+    .footer .legalInformation li a{
+        font-size: 2vw;
+    }
+    .footer .address .contacts li{
+        font-size: 2vw;
+    }
+    .footer .address .contacts li a{
+        font-size: 2vw;
+    }
+}
+@media (max-width: 425px){
+
+    /* MAIN */
+    .main .card{
+        flex-direction: column;
+        row-gap: 4vw;
+        border: 0;
+    }
+    .main .card img{
+        width: 100%;
+    }
+    .main .card .description{
+        font-size: 4vw;
+        row-gap: 4vw;
+    }
+    .main .card .description button{
+        font-size: 6vw;
+    }
+    .main .review{
+        flex-direction: column;
+        row-gap: 10vw;
+    }
+    .main .review .review-item{
+        width: 100%;
+        font-size: 4vw;
+        padding: 4vw;
+    }
+    .main .review .review-item ul li{
+        width: 8vw;
+    }
+
+    /* FOOTER */
+    .footer{
+        flex-direction: column;
+        row-gap: 4vw;
+    }
+    .footer .legalInformation li a{
+        font-size: 4vw;
+    }
+    .footer .address .contacts li{
+        font-size: 4vw;
+    }
+    .footer .address .contacts li a{
+        font-size: 4vw;
+    }
+}

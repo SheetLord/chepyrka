@@ -1,0 +1,50 @@
+body{
+    padding: 2% 10%;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.header p{
+    font-size: 1.3vw;
+    margin-bottom: 0;
+}
+.main{
+    margin-top: 10%;
+}
+.main h1{
+    text-align: center;
+    color: #c00;
+    font-size: 2vw;
+}
+.main h2{
+    text-align: center;
+    color: #c00;
+    font-size: 1.5vw;
+}
+.main p{
+    font-size: 1.3vw;
+}
+.main ul{
+    font-size: 1.3vw;
+}
+
+@media (max-width: 768px){
+    .header p{
+        font-size: 2vw;
+    }
+    .main h1{
+        font-size: 4vw;
+    }
+    .main h2{
+        font-size: 3vw;
+    }
+    .main p{
+        font-size: 2.3vw;
+    }
+    .main ul{
+        font-size: 2.3vw;
+    }
+}
