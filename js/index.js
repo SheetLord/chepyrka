@@ -72,4 +72,15 @@ headerButton[1].onclick = () =>{
 }
 //Темная тема
 let darkTheme = document.querrySelector(".dark-theme");
-darkTheme.style.backgroundColor = 'black';
+let darkThemeCounter = 0;
+let body = document.querrySelector("body");
+darkTheme.onclick = () =>{
+    darkThemeCounter++;
+    if (darkThemeCounter = 0){
+        body.style.backgroundColor = 'black';
+    }
+    else{
+        body.style.backgroundColor = 'white';
+    }
+    darkThemeCounter = 0;
+}
