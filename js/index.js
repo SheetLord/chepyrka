@@ -71,16 +71,17 @@ headerButton[1].onclick = () =>{
     window.open('./pages/registration.html');
 }
 //Темная тема
-let darkTheme = document.querrySelector(".dark-theme");
-let darkThemeCounter = 0;
+let darkThemeButton = document.querrySelector(".dark-theme");
 let body = document.querrySelector("body");
-darkTheme.onclick = () =>{
+let darkThemeCounter = 0;
+darkThemeButton.onclick = () =>{
     darkThemeCounter++;
     if (darkThemeCounter = 0){
-        body.style.backgroundColor = 'black';
+        body.classList.toggle("whiteTheme");
+        darkThemeButton.innerText = "светлая тема";
     }
     else{
-        body.style.backgroundColor = 'white';
+        body.classList.toggle("blackTheme");
+        darkThemeButton.innerText = "темная тема";
     }
-    darkThemeCounter = 0;
 }
