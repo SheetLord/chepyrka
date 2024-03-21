@@ -77,11 +77,11 @@ let darkThemeCounter = 0;
 darkThemeButton.onclick = () =>{
     darkThemeCounter++;
     if (darkThemeCounter = 0){
-        body.classList.toggle("whiteTheme");
+        body.classList.toggle("white-theme");
         darkThemeButton.innerText = "светлая тема";
     }
     else{
-        body.classList.toggle("blackTheme");
+        body.classList.toggle("black-theme");
         darkThemeButton.innerText = "темная тема";
     }
 }
