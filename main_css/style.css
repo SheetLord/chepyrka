@@ -8,13 +8,6 @@
     list-style-type: none;
     scroll-padding-top: 12vw;
 }
-/* BODY */
-switch-theme.black-theme{
-    background-color: black;
-}
-switch-theme.white-theme{
-    background-color: white;
-}
 /* HEADER*/
 .header{
     background-color: #fff;
