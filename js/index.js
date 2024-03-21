@@ -76,6 +76,8 @@ let body = document.querrySelector("body");
 let darkThemeCounter = 0;
 darkThemeButton.onclick = () =>{
     darkThemeCounter++;
+    body.classList.toggle("white-theme");
+    darkThemeButton.innerText = "светлая тема";
     if (darkThemeCounter = 0){
         body.classList.toggle("white-theme");
         darkThemeButton.innerText = "светлая тема";
