@@ -9,10 +9,10 @@
     scroll-padding-top: 12vw;
 }
 /* BODY */
-body.black-theme{
+switch-theme.black-theme{
     background-color: black;
 }
-body.white-theme{
+switch-theme.white-theme{
     background-color: white;
 }
 /* HEADER*/
