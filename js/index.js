@@ -70,3 +70,6 @@ headerButton[0].onclick = () =>{
 headerButton[1].onclick = () =>{
     window.open('./pages/registration.html');
 }
+//Темная тема
+let darkTheme = document.querrySelector(".dark-theme");
+darkTheme.style.backgroundColor = 'black';
