@@ -70,20 +70,3 @@ headerButton[0].onclick = () =>{
 headerButton[1].onclick = () =>{
     window.open('./pages/registration.html');
 }
-//Темная тема
-let darkThemeButton = document.querrySelector(".dark-theme");
-let body = document.querrySelector("body");
-let darkThemeCounter = 0;
-darkThemeButton.onclick = () =>{
-    darkThemeCounter++;
-    body.classList.toggle("white-theme");
-    darkThemeButton.innerText = "светлая тема";
-    if (darkThemeCounter = 0){
-        body.classList.toggle("white-theme");
-        darkThemeButton.innerText = "светлая тема";
-    }
-    else{
-        body.classList.toggle("black-theme");
-        darkThemeButton.innerText = "темная тема";
-    }
-}
