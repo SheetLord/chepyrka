@@ -70,3 +70,19 @@ headerButton[0].onclick = () =>{
 headerButton[1].onclick = () =>{
     window.open('./pages/registration.html');
 }
+
+//Смена темы
+let changeThemeButton = document.querySelector('.change-theme');
+let changeValueInput = document.querySelector('.theme-value');
+let main = document.querySelector('.main');
+let header = document.querySelector('.header');
+let footer = document.querySelector('.footer');
+let filter = document.querySelector('.filter');
+
+changeThemeButton.onclick = () =>{
+    let themeValue = changeValueInput.value;
+    main.style.backgroundColor = `#${themeValue}`;
+    header.style.backgroundColor = `#${themeValue}`;
+    footer.style.backgroundColor = `#${themeValue}`;
+    filter.style.backgroundColor = `#${themeValue}`;
+}

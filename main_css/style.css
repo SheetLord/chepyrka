@@ -33,14 +33,22 @@
 }
 .header .navbar .nav-item{
     color: #000;
-    font-size: 1.1vw;
+    font-size: 1vw;
+}
+.header .navbar .theme{
+    display: flex;
+    flex-direction: column;
+}
+.header .navbar .theme .theme-value{
+    font-size: 0.8vw;
+    width: 5vw;
 }
 .header .signUp{
     display: flex;
     column-gap: 2vw;
 }
 .header .signUp .signUp-item{
-    font-size: 1.1vw;
+    font-size: 1vw;
     padding: 0.5vw 2vw;
     background-color: #fff;
     border: 0.2vw solid #000;
@@ -84,9 +92,7 @@
 .main{
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
-    padding: 0 8vw;
-    margin-top: 10%;
+    padding: 10vw 8vw;
 }
 .main .filter{
     background-color: #fff;
